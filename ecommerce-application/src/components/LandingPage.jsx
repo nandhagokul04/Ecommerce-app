@@ -1,0 +1,45 @@
+import React, { useState } from 'react';
+import '../styles/Landingpage.css';
+import { useNavigate } from 'react-router';
+import { FaSackDollar } from "react-icons/fa6";
+import { ShoppingBag } from 'react-feather';
+
+
+
+const LandingPage = () => {
+
+    let nav = useNavigate()
+    const userpage = () => {
+        nav('/userlogin')
+    }
+    const merchantpage = () => {
+        nav('/merchantlogin')
+    }
+
+    const aaaa = () => {
+        nav("/merchanthome")
+    }
+
+    return (
+        <div className="landingpage">
+            <div className="lpcontent"> 
+                <div className="joinus">
+                    <p id='joinus'>Shop with Us!</p>
+                    <p id='para'>To begin this journey, tell us what type of account you’d be opening.</p>
+                </div>
+
+                <button id='individualbtn' onClick={userpage}>
+                <ShoppingBag id='usericon'/>  user -{'>'}
+                </button>
+                    <br />
+                <button id='buisness' onClick={merchantpage}>
+                <FaSackDollar  id='merchanticon'/>
+                    merchant  -{'>'}
+                </button>
+            </div>
+            <button onClick={aaaa}>aaa</button>
+        </div>
+    );
+};
+
+export default LandingPage;

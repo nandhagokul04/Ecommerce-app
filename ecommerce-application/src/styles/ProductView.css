@@ -1,0 +1,114 @@
+.merchantdata {
+    display: flex;
+}
+.productview{
+    display: flex;
+}
+
+.productimg img {
+    height: 330px;
+    width: 300px;
+    margin: 30px 50px 30px 30px;
+}
+
+.merchantdata .content h6 {
+    margin: 30px 50px 0px 50px;
+}
+.editordelete{
+    display: flex;
+}
+
+#editproduct {
+    border: none;
+    background-color: transparent;
+    color: green;
+    margin: -10px 0px 30px 430px;
+}
+
+#editproduct:hover {
+    color: black;
+}
+
+#deleteproduct {
+    margin: -10px 0px 30px 20px;
+    color: red;
+    border: none;
+    background-color: transparent;
+}
+
+#deleteproduct:hover {
+    color: black;
+}
+
+.data {
+    margin-left: 62%;
+    height: auto;
+   box-shadow: 05px 10px 20px rgb(90, 89, 89);
+   background-color: white;
+   width: 45vw;
+}
+li{
+    color: grey;
+}
+li::marker{
+    color: transparent;
+}
+.customnav{
+    position: fixed;
+    background-color: #323232;
+    width: 19%;
+    height: 70vh;
+    margin-top: 25px;
+}
+.customnav input{
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 2px 5px;
+    padding-bottom: 2px;
+    margin: 150px 0px 30px 30px ;
+}
+.customnav button{
+    border: none;
+    background-color: transparent;
+    color: white;
+    position: relative;
+}
+
+.customnav2{
+    position: fixed;
+    background-color: #323232;
+    width: 19%;
+    height: 70vh;
+    left: 81%;
+    margin-top: 25px;
+}
+.customnav2 input{
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 2px 5px;
+    padding-bottom: 2px;
+    margin: 150px 0px 30px 30px ;
+}
+.customnav2 button{
+    border: none;
+    color: white;
+    background-color: transparent;
+    position: relative;
+    right: 0px;
+}
+button:hover{
+    color: #CC0E20;
+}
+ #refresh:hover{
+    color: #CC0E20;
+}
+ #refresh{
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 2px 70px;
+    color: black;
+    background-color: white;
+    padding-bottom: 2px;
+    margin: 100px 0px 30px 035px ;
+}
+

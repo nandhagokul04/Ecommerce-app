@@ -1,0 +1,59 @@
+.mform {
+    backdrop-filter: blur(40px);
+    box-shadow: 10px 10px 10px #717171;
+    border-radius: 20px;
+    padding-top: 30px;
+    height: 65vh;
+    width: 60vh;
+    margin: 10vh 0vh 0vh 70vh;
+}
+
+.mform input {
+    background-color: #eeeeee;
+    padding: 5px 40px;
+    margin: 20px 30px 10px 100px;
+    border: none;
+    border-bottom: 3px solid #100e0f;
+    box-shadow: none;
+}
+
+.mform button {
+    margin: 20px 30px 10px 180px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    color: #CC0E20;
+    background-color: white;
+
+}
+
+.mform button:hover {
+    color: white;
+    background-color: #CC0E20;
+   
+}
+
+.mform input:hover {
+    border: none;
+    box-shadow: 0 0 10px #CC0E20;
+    border-radius: 10px;
+    border-radius: none;
+}
+
+.updatemerchant {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    height: 87%;
+    background-image: url("C:\Users\Nandha\OneDrive\Desktop\workspaces\Ecommerce-app\ecommerce-application\src\styles\images\editmerchantbg.png");
+    background-repeat: none;
+    background-size: cover;
+}
+.addproducts{
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    background-image: url("C:\Users\Nandha\OneDrive\Desktop\workspaces\Ecommerce-app\ecommerce-application\src\styles\images\adddproductsbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 87%;
+}

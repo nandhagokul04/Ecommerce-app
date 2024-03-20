@@ -1,0 +1,117 @@
+.merchantsignup{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.image img{
+    height: 100vh;
+    width: 50vw;
+}
+.form label {
+    color: #000000;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    margin: 0px 40px;
+}
+
+.form input {
+    padding: 10px 50px;
+    border: none;
+    border-color: #007EFE;
+    box-shadow: 0 0 5px #007EFE;
+    margin: 10px 50px 10px 137px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    
+}
+
+.form input:hover {
+    border-bottom: 2px solid #007EFE;
+}
+.image {
+    margin: 0px 20px;
+}
+
+.form {
+    box-shadow: 10px 10px 20px #cbe4fe;
+    width: 600px;
+    height: 60vh;
+    margin: 180px 0px;
+    margin-left: 80px;
+    align-items: center;
+}
+
+.form button {
+    padding: 10px 60px;
+    margin: 20px 0px 30px 190px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #007EFE;
+    border: none;
+    color: white;
+}
+
+.form button:hover {
+    color: #007EFE;
+    border: 1px solid #007EFE;
+    background-color: white;
+    border-radius: 30px;
+}
+#in{
+    margin: 0px 0px 10px 135px;
+    color: #2b2c2dab;
+}
+/* merchant signup */
+.mersignup{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.mersignup .form input {
+    padding: 10px 50px;
+    border: none;
+    border-color: #FF4F5A;
+    box-shadow: 0 0 5px #FF4F5A;
+    margin: 10px 50px 10px 137px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    
+}
+
+.mersignup .form input:hover {
+    border-bottom: 2px solid #FF4F5A;
+}
+.mersignup .image {
+    margin: 0px 20px;
+}
+
+.mersignup .form {
+    box-shadow: 10px 10px 20px #cbe4fe;
+    width: 600px;
+    height: 70vh;
+    margin: 160px 0px;
+    margin-left: 80px;
+    align-items: center;
+}
+
+.mersignup .form button {
+    padding: 10px 60px;
+    margin: 20px 0px 30px 190px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #FF4F5A;
+    border: none;
+    color: white;
+}
+
+.form button:hover {
+    color: #FF4F5A;
+    border: 1px solid #FF4F5A;
+    background-color: white;
+    border-radius: 30px;
+}
+#in{
+    margin: 0px 0px 10px 135px;
+    color: #2b2c2dab;
+}

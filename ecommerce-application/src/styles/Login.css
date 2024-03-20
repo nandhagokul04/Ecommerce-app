@@ -1,0 +1,126 @@
+.merchantlogin {
+    display: flex;
+}
+
+.userlogincontent h3 {
+    margin-left: 20px;
+    color: gray;
+}
+
+.userlogincontent,
+.merchantlogincontent {
+    box-shadow: 10px 10px 10px #007DFC;
+    text-align: center;
+    margin: auto;
+    width: 40vw;
+    height: 60vh;
+}
+
+#email {
+    padding: 3px 30px;
+    border: 1px solid #007DFC;
+    margin: 40px 30px 30px 70px;
+    background-color: rgb(245, 244, 244);
+}
+
+#email:hover,
+#pass:hover {
+    box-shadow: 0px 0px 20px #007DFC;
+}
+
+#pass {
+    padding: 2px 30px;
+    border: none;
+    border: 1px solid #007DFC;
+    margin: 10px 30px 30px 70px;
+}
+
+.userlogincontent button{
+    padding: 5px 20px;
+    font-weight: 300;
+    margin: 10px 0px 20px 35px;
+    border: 1px solid #007DFC;
+    border-radius: 10px;
+    background-color: #007DFC;
+    color: white;
+}
+.userlogincontent button:hover{
+    color: black;
+    background-color: white;
+    font-weight: 300;
+    border: none;
+
+}
+
+.sup p {
+    font-size: 17px;
+    margin-left: 25px;
+}
+
+.sup a {
+    text-decoration: none;
+}
+
+.sup a:hover {
+    color: black;
+}
+
+#hr {
+    width: 60vh;
+    margin: 5px 20px 30px 80px;
+}
+
+/* Merchangt login page */
+.merchantlinimg img {
+    height: 100vh;
+    width: 50vw;
+}
+
+.merchantlogincontent {
+    box-shadow: 10px 10px 10px #FF735C;
+
+}
+
+.merchantlogincontent button  {
+    padding: 5px 20px;
+    font-weight: 300;
+    margin: 10px 0px 20px 35px;
+    border: 1px solid #FF735C;
+    border-radius: 10px;
+    background-color: #FF735C;
+    color: white;
+}
+
+.merchantlogincontent #email {
+    padding: 3px 30px;
+    border: 1px solid #FF735C;
+    margin: 40px 30px 30px 70px;
+    background-color: rgb(245, 244, 244);
+}
+
+.merchantlogincontent #email:hover,
+.merchantlogincontent #pass:hover {
+    box-shadow: 0px 0px 20px #FF735C;   
+}
+
+.merchantlogincontent #pass {
+    padding: 2px 30px;
+    border: none;
+    border: 1px solid #FF735C;
+    margin: 10px 30px 30px 70px;
+}
+
+.merchantlogincontent .sup a {
+    color: #FF735C;
+}
+.merchantlogincontent .sup a:hover {
+    color: black;
+}
+.merchantlogincontent button:hover {
+    color: #FF735C;
+    background-color: white;
+    border: none;
+}
+.merchantlogincontent h3{
+    color: gray;
+}

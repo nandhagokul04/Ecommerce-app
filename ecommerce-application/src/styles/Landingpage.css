@@ -1,0 +1,70 @@
+@font-face {
+    font-family: Inter;
+    src: url(./fonts/Inter-VariableFont_slnt,wght.ttf);
+  }
+.landingpage {
+    background-image: url("https://img.freepik.com/free-photo/online-fashion-shopping-collage_23-2150535781.jpg?t=st=1710580108~exp=1710583708~hmac=69ebe48e7b14e5ab56aea91aef80b3620e4205039e6b052b6b84c39e6d736d18&w=1060");
+    height: 100vh;
+    background-size: cover;
+    font-family: Inter;
+    background-repeat: no-repeat;
+}
+#joinus{
+    margin: 0px 10px 20px 30px;
+ color: white;
+ font-size: 40px;
+ font-weight: 600;
+}
+#para{
+    margin: 0px 10px 20px 30px;
+    color: rgba(255, 255, 255, 0.863);
+ font-size: 20px;
+ font-weight: 400;
+
+}
+#individualbtn{
+    margin: 70px 20px 20px 60px;
+    padding: 10px 135px 10px 135px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: xx-large;
+    font-weight: 500;
+
+}
+#individualbtn:hover,#buisness:hover{
+    background-color: white;
+    color: #4B8EB8;
+   
+}
+#buisness{
+    padding: 10px 100px 10px 100px;
+    margin: 50px 20px 20px 60px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: xx-large;
+    font-weight: 500;
+}
+#usericon{
+    position: relative;
+    right: 60px;
+    height: 30px;
+    width: 30px;
+}
+#merchanticon{
+    position: relative;
+    right: 40px;
+    height: 30px;
+    width: 30px;  
+}
+.lpcontent{
+    width: 38%;
+    height: 70vh;
+    position: absolute;
+    top: 150px;
+    left: 750px;
+    box-shadow: 0px 0px 10px 5px white;
+}
