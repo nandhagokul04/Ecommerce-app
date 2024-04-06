@@ -15,6 +15,7 @@ function ProductView() {
     let[refdata,setrefdata]=useState("")
 
     useEffect(() => {
+        console.log("product view");
         axios.get(`http://localhost:8080/products/merchant_id/${id}`)
             .then(response => {
                 setData(response.data.data);
@@ -67,13 +68,17 @@ function ProductView() {
                    <div className="customnav">
                 <input type="search" value={brand} placeholder="search by brand" id="search-brand" onChange={(e)=>{setbrand(e.target.value)}}/>
                 <button id="brand-btn" onClick={()=>{searchbrand()}} ><Search/></button>
+                {/* <input type="search" value={brand} placeholder="search by name" id="search-brand" onChange={(e)=>{setbrand(e.target.value)}}/>
+                <button id="brand-btn" onClick={()=>{searchbrand()}} ><Search/></button> */}
+                <input type="search" value={category} placeholder="search by catagory "id="search-catagory" onChange={(e)=>{setcategory(e.target.value)}}/>
+                <button id="catagory-btn" onClick={()=>{searchcategory()}} ><Search/></button>
                 <button id="refresh" onClick={ref}>Refresh </button>
                 
             </div>
             <div className="div">
             {data.map((x) => (
                 <li key={x.id}>
-                    <div className="data">
+                    <div className="merchant-data">
                         <div className="merchantdata">
                             <div className="productimg">
                                 <img src={x.image_url} alt="" />
@@ -97,11 +102,6 @@ function ProductView() {
 
             ))}
 
-        </div>
-        <div className="customnav2">
-        <input type="search" value={category} placeholder="search by catagory "id="search-catagory" onChange={(e)=>{setcategory(e.target.value)}}/>
-                <button id="catagory-btn" onClick={()=>{searchcategory()}} ><Search/></button>
-            <button id="refresh" onClick={ref}>Refresh </button>
         </div>
         </div>
     );

@@ -1,8 +1,8 @@
-.img img{
+.mer-img img{
     height: 400px;
     width: 500px;
 }
-.img{
+.mer-img{
     display: flex;
 }
 #hub{
@@ -15,7 +15,7 @@
     width: 70%;
     margin: 30px 100px 50px 80px;
   }
-.img h1{
+.mer-img h1{
     /* color: #E3192E; */
     margin: 100px 90px 40px 80px;
 }

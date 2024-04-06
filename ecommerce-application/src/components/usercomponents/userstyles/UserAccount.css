@@ -1,0 +1,38 @@
+.my-account,.edit_user__acc{
+    margin: 200px 50px 0px 170px;
+    padding: 50px 0px;
+    height: 50%;
+    width: 30%;
+   box-shadow: 0px 0px 20px #095DA4 ; 
+   backdrop-filter: blur(20px);
+}
+.my-account p{
+font-size: 20px;
+color: rgba(0, 0, 0, 0.655);
+padding: 10px 50px;
+}
+.my-account button{
+    border: none;
+    background-color: white;
+    color: green;
+    margin: 10px 0px 30px 190px;
+}
+.useraccount{
+    height: 97vh;
+    background-image: url("https://img.freepik.com/free-vector/white-background-with-hexagonal-line-pattern-design_1017-28442.jpg?w=1380");
+    background-repeat: initial;
+    background-size: cover;
+    display: flex;
+}
+.edit_user__acc input{
+    border: none;
+    border-bottom: 2px solid #095DA4;
+  padding: 3px 40px;
+  margin: 12px 100px;
+}
+.edit_user__acc input:hover{
+border: 1px solid #095DA4;
+}
+.edit_user__acc button{
+margin: 30px 200px;
+}
