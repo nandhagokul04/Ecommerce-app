@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { LogOut, ShoppingCart } from "react-feather";
+import { Home, LogOut, ShoppingBag, ShoppingCart } from "react-feather";
 import { Link} from "react-router-dom";
 import '../styles/MerchantNavbar.css';
 import MerchantHomecon from "./MerchantHomecon";
@@ -21,18 +21,15 @@ function MerchantNavbar() {
                     <BiSolidShoppingBags id="img" />
                 </div>
                 <div className="homem">
-                    <Link to="/merchanthome/merchanthomecon" onClick={hideHome}> <ShoppingCart /> Home</Link>
+                    <Link to="/merchanthome/merchanthomecon" onClick={hideHome}><Home  id="nav-con-logo"/>  Home</Link>
                 </div>
 
                 <div className="viewp">
-                    <Link to="/merchanthome/productview" onClick={hideHome}> <ShoppingCart /> Your products</Link>
+                    <Link to="/merchanthome/productview" onClick={hideHome}><ShoppingBag id="nav-con-logo"/> Your products</Link>
                 </div>
                 <div className="addp">
-                    <Link to="/merchanthome/addproducts" onClick={hideHome}> <ShoppingCart /> Add product</Link>
+                    <Link to="/merchanthome/addproducts" onClick={hideHome}> <ShoppingCart id="nav-con-logo"/> Add product</Link>
                 </div>
-                {/* <div className="updatep">
-                    <Link to="/productview" onClick={hideHome}> <ShoppingCart /> update product</Link>
-                </div> */}
                 <div className="account">
                 <Link to='/merchanthome/updatemerchant' onClick={hideHome}><MdAccountCircle id="account"/> Edit Account</Link>
                 </div>

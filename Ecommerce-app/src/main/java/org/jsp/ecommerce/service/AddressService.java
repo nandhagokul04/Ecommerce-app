@@ -1,5 +1,6 @@
 package org.jsp.ecommerce.service;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.jsp.ecommerce.Exception.IdNotFountException;
@@ -48,7 +49,7 @@ public class AddressService {
 			ad.setType(address.getType());
 			ResponseStructure<Address> str=new ResponseStructure<>();
 			str.setData(dao.save(ad));
-			str.setMessage("Address added");
+			str.setMessage("Address updated");
 			str.setStatuscode(HttpStatus.OK.value());
 			return new ResponseEntity<ResponseStructure<Address>>(str,HttpStatus.OK);
 		}
@@ -59,9 +60,9 @@ public class AddressService {
 		if(addres.isPresent()) {
 			ResponseStructure<Address> str=new ResponseStructure<>();
 			str.setData(addres.get());
-			str.setMessage("Address added");
-			str.setStatuscode(HttpStatus.FOUND.value());
-			return new ResponseEntity<ResponseStructure<Address>>(str,HttpStatus.FOUND);
+			str.setMessage("Address found");
+			str.setStatuscode(HttpStatus.OK.value());
+			return new ResponseEntity<ResponseStructure<Address>>(str,HttpStatus.OK);
 		}
 		throw new IdNotFountException("Invalid ID entered");	
 	}
@@ -71,9 +72,20 @@ public class AddressService {
 			dao.delete(id);
 			ResponseStructure<Address> str=new ResponseStructure<>();
 			str.setData(null);
-			str.setMessage("Address added");
-			str.setStatuscode(HttpStatus.FOUND.value());
-			return new ResponseEntity<ResponseStructure<Address>>(str,HttpStatus.FOUND);
+			str.setMessage("Address deleted");
+			str.setStatuscode(HttpStatus.OK.value());
+			return new ResponseEntity<ResponseStructure<Address>>(str,HttpStatus.OK);
+		}
+		throw new IdNotFountException("Invalid ID entered");	
+	}
+	public ResponseEntity<ResponseStructure<List<Address>>> findbyuserid(int id){
+	List<Address> addres= dao.findbyuser(id);
+		if(addres.size()!=0) {
+			ResponseStructure<List<Address>> str=new ResponseStructure<>();
+			str.setData(addres);
+			str.setMessage("user Address found");
+			str.setStatuscode(HttpStatus.OK.value());
+			return new ResponseEntity<ResponseStructure<List<Address>>>(str, HttpStatus.OK);
 		}
 		throw new IdNotFountException("Invalid ID entered");	
 	}

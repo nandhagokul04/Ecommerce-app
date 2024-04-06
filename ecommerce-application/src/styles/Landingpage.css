@@ -3,68 +3,84 @@
     src: url(./fonts/Inter-VariableFont_slnt,wght.ttf);
   }
 .landingpage {
-    background-image: url("https://img.freepik.com/free-photo/online-fashion-shopping-collage_23-2150535781.jpg?t=st=1710580108~exp=1710583708~hmac=69ebe48e7b14e5ab56aea91aef80b3620e4205039e6b052b6b84c39e6d736d18&w=1060");
+    position: absolute;
+    top:0px;
+    width: 100vw;
     height: 100vh;
+    background-image: url("C:\Users\Nandha\OneDrive\Desktop\workspaces\Ecommerce-app\ecommerce-application\src\styles\images\landing-pg-bg.jpg");
     background-size: cover;
     font-family: Inter;
     background-repeat: no-repeat;
 }
-#joinus{
+#joinus,#buisnessp{
     margin: 0px 10px 20px 30px;
- color: white;
- font-size: 40px;
+ color: #095DA4;
+ font-size: 25px;
  font-weight: 600;
+}
+#buisnessp{
+    color: #F44D24;
 }
 #para{
     margin: 0px 10px 20px 30px;
-    color: rgba(255, 255, 255, 0.863);
- font-size: 20px;
+    color: #12031F;
+ font-size: 15px;
  font-weight: 400;
 
 }
 #individualbtn{
-    margin: 70px 20px 20px 60px;
-    padding: 10px 135px 10px 135px;
-    color: white;
+    margin:30px 0px 0px 170px;
+    font-size: 25px;
+    color:  #095DA4;
     background-color: transparent;
-    border: 1px solid white;
+    border: 1px solid #095DA4;
     border-radius: 10px;
-    font-size: xx-large;
     font-weight: 500;
+    padding: 0px  50px;
 
 }
-#individualbtn:hover,#buisness:hover{
-    background-color: white;
-    color: #4B8EB8;
-   
+#individualbtn:hover{
+    background-color: #095DA4;
+    color: white;
+    border: none;  
+}
+#buisness:hover{
+    background-color: #F04823;
+    color: white;
+    border: none;
 }
 #buisness{
-    padding: 10px 100px 10px 100px;
-    margin: 50px 20px 20px 60px;
-    color: white;
+    border: 1px solid #F04823;
+    margin:30px 0px 0px 130px;
+    color:  #F04823;
     background-color: transparent;
-    border: 1px solid white;
     border-radius: 10px;
-    font-size: xx-large;
     font-weight: 500;
-}
-#usericon{
-    position: relative;
-    right: 60px;
-    height: 30px;
-    width: 30px;
-}
-#merchanticon{
-    position: relative;
-    right: 40px;
-    height: 30px;
-    width: 30px;  
+    font-size: 25px;
+    padding: 0px  50px;
+
+
 }
 .lpcontent{
-    width: 38%;
-    height: 70vh;
-    position: absolute;
-    top: 150px;
-    left: 750px;
-    box-shadow: 0px 0px 10px 5px white;
+    box-shadow: 10px 10px 20px  black;
+    margin: -10px 0px 30px 100px;
+    padding: 30px 30px;
+    width: 50%;
+    height: 40vh;
+    box-shadow: 10px 10px 15px  #DBD0D1;
+}
+.mer-cont{
+    margin: 30px 0px 30px 100px;
+    box-shadow: 10px 10px 20px  black;
+    padding: 30px 30px;
+    width: 50%;
+    height: 40vh;
+    box-shadow: 10px 10px 15px  #DBD0D1;
+}
+.landing-image img{
+  height: 50px;
+  margin: 0px 250px;
+}
+#merchanticon{
+    margin: 0px 9px;
 }

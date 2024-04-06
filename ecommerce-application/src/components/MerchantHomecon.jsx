@@ -10,7 +10,7 @@ import { MdOutlineProductionQuantityLimits } from "react-icons/md";
 function MerchantHomecon() {
     return (
         <div className="mhc">
-            <div className="img">
+            <div className="mer-img">
                 <div className="image">
                 <img src={homeimg} alt="" /></div>
                 <div className="con">

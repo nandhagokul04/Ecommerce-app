@@ -9,6 +9,7 @@ import UserHome from "./components/UserHome";
 import UserSignUp from "./components/UserSignUp";
 import Error from "./components/Error";
 import Protect from "./components/Protect";
+import ProtectUser from "./components/ProtectUser";
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
           <Route path='/merchantsignup' element={<MerchantSignUp />} />
           <Route path='/usersignup' element={<UserSignUp />} />
           <Route path='/merchanthome/*' element={<Protect Child={MerchantHome}/>} />
-          <Route path='/userhome' element={<UserHome />} />
+          <Route path='/userhome/*' element={<ProtectUser Child={UserHome}/>} />
         </Routes>
       </BrowserRouter>
     </div>

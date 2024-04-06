@@ -40,7 +40,7 @@ public class UserController {
 		return service.delete(id);
 	}
 
-	@GetMapping("/{id}")
+	@GetMapping("/get/{id}")
 	public ResponseEntity<ResponseStructure<User>> find(@PathVariable int id) {
 		return service.find(id);
 	}

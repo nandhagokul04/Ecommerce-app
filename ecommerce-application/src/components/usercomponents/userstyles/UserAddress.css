@@ -1,0 +1,57 @@
+.useraddress{
+    margin:100px 30px 50px 30px;
+    display: flex;
+}
+.add-address input{
+    border: none;
+    border-bottom: 5px solid #095DA4 ;
+    padding: 5px 50px;
+    margin: 10px 110px;
+}
+.addresses  button{
+    border: none;
+    background-color: transparent;
+    margin-left: 30px;
+    color: red;
+}
+.addresses button:hover{
+color: green;
+transform: scale(1.3);
+
+}
+.add-address input:hover{
+  border: 2px solid #095DA4;
+  border-radius: 30px;
+}
+.add-address h4{
+    color: #095DA4;
+    padding-left: 130px;
+}
+.add-address{
+    position: sticky;
+    padding: 20px;
+    margin: 30px 3px 0px 30px;
+     box-shadow:10px 10px 20px grey;
+     width: 35%;
+     height:max-content;
+    
+}
+.add-address button{
+    padding: 2px 70px;
+    background-color: #095DA4;
+    font-weight: 500;
+    border: none;
+    color: white;
+    margin: 10px 150px;
+    border-radius: 20px
+}
+.add-address button:hover{
+  color: #095DA4;
+  background-color: white;
+}
+/* view addresses */
+.my-address{
+   width: 300px;
+   padding:30px 50px 10px 10px;
+   color: grey;
+}
