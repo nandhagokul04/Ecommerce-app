@@ -16,7 +16,7 @@ function UserSignUp() {
         axios.post('http://localhost:8080/users',data)
         .then((res)=>{
             console.log(res);
-            alert("User added successfully")
+            alert("Verification link was sent to your registered Email ID")
         })
         .catch(()=>{
             alert( "User adding failed")
