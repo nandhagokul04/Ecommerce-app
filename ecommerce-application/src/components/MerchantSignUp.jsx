@@ -16,7 +16,7 @@ function MerchantSignUp() {
         axios.post('http://localhost:8080/merchants',data)
         .then((res)=>{
             console.log(res);
-            alert("Merchant added successfully")
+            alert("Verification link was sent to your registered Email ID")
         })
         .catch(()=>{
             alert( "Merchant adding failed")
