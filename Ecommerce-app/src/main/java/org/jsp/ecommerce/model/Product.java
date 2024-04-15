@@ -34,5 +34,13 @@ public class Product {
 	@JoinColumn(name="merchant_id")
 	@JsonIgnore
 	private Merchant merchant;
+	@ManyToOne
+	@JoinColumn(name="product_id")
+	@JsonIgnore
+	private ProductCart cart;
+	@ManyToOne
+	@JoinColumn(name="order_id")
+	@JsonIgnore
+	private Orders order;
 	
 }

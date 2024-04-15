@@ -50,6 +50,7 @@ public class UserController {
 	}
 	@PostMapping("/verify")
 	public ResponseEntity<ResponseStructure<User>> verify(@RequestParam String email,@RequestParam String password) {
+		System.err.println("user verify called ---------------------------------------------");
 		return service.verify(email, password);
 	}
 	@GetMapping("/verify-user")

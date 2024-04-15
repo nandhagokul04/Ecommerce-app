@@ -1,49 +1,80 @@
+.product-item{
+  width: 400px;
+  border: 1px solid #c2d3e8;
+  border-radius: 20px;
+  margin: 20px 0px 0px 50px;
+}
+
 .user-products-class {
-  background-color: #FAF4F8;
-  display: flex;
-  box-shadow: 10px 10px 20px grey;
-  margin: 0px 30px;
-  padding: 50px;
+
+  background-color: #CDD9E9;
+  border-start-end-radius: 20px;
+  border-top-left-radius: 20px;
 }
 
 .productview {
-  background-color: #FAF4F8;
+  background:linear-gradient(right,#F6ECED,#E9E4E8,#BFD0E4,#3EA2D6);
   display: flex;
   flex-direction: column;
 }
 
 .user-product-img img {
-  height: 380px;
-  width: 340px;
+  height: 260px;
+  width: 230px;
+  margin: 10px 0px 50px 70px;
 }
 
 .user-product-content {
-  background-color: #FAF4F8;
-  margin-top: 0px;
-  margin: 30px;
+  margin:10px 0px 0px 30px;
 }
+.user-product-content button {
+  border: 1px solid #095DA4 ;
+  background-color: #095ea4df;
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+  padding: 4px 30px;
+  border-radius: 30px;
+  margin: 20px 0px 30px 30px;
 
-.user-product-content h6 {
-  background-color: #FBF5F9;
-  font-size: 26px;
 }
+.user-product-content button:hover {
+  color: #095DA4;
+  background-color: white;
+  border: 1px solid #095DA4;
+  border-radius: 30px;
+}
+.user-products-class #name {
+  color: #0c4573;
+  font-size: 23px;
+  padding: 10px 0px 10px 0px;
+  text-align: center;
+  height: max-content;
+}
+.user-product-content #desc{
+  color: grey;
+  font-size: 18px;
+  margin: 10px 0px 10px 38px;
+
+  }
+  .user-product-content #cost{
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+  margin: 20px 0px 0px 38px;
+  }
 
 .img img {
-  margin-left: 10px;
   margin-top: 7%;
-  height: 250px;
-  width: 98vw;
+  height: 200px;
+  width: 98.9vw;
 }
 .product-grid {
+  width: 98%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px; /* Gap between items */
+  grid-template-columns: repeat(3, 1fr);
+  /* gap: 0px; Gap between item */
 }
 
-.product-item {
-  display: flex;
-  flex-direction: column;
-}
 
 /* Media query for smaller screens to switch to a single column layout */
 @media screen and (max-width: 768px) {

@@ -1,0 +1,24 @@
+package org.jsp.ecommerce.controller;
+
+import org.jsp.ecommerce.dto.ResponseStructure;
+import org.jsp.ecommerce.model.Cart;
+import org.jsp.ecommerce.service.CartService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/cart")
+public class CartController {
+	@Autowired
+	private CartService service;
+	
+	@PostMapping("")
+	public ResponseEntity<ResponseStructure<Cart>> save (@RequestParam int product_id, @RequestParam int user_id ){
+		return service.save(product_id,user_id);
+	}
+
+}

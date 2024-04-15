@@ -25,15 +25,16 @@ function UserNavbar() {
         <div className="usernavbar">
             <div className="user-navbar-links">
                 <img id="logo" src={logo} alt="" />
-                <Link to="/userhome/viewproducts" onClick={showHome} > <FaHome /> Home</Link> <br />
-                <Link to="/userhome/viewcart" onClick={hideHome}><FaOpencart /> Cart</Link> <br />
-                <Link to="/userhome/useraccount" onClick={hideHome}><RiAccountPinBoxFill /> Account</Link> <br />
-                <Link to="/userhome/orders" onClick={hideHome}><MdLocalPrintshop /> Orders</Link> <br />
-                <Link to="/userhome/useraddress" onClick={hideHome}><FaAddressBook /> Address</Link> <br />
-                <input type="search"  placeholder="search product🔎"/>
-                <Link to="/" onClick={hideHome}>Logout <TbHandClick /></Link> <br />            </div>
+                <Link to="/userhome/viewproducts" onClick={showHome} > <FaHome id="home_img" /> Home</Link> <br />
+                <Link to="/userhome/viewcart" onClick={hideHome}><FaOpencart id="cart_img" /> Cart</Link> <br />
+                <Link to="/userhome/orders" onClick={hideHome}><MdLocalPrintshop id="order_img" /> Orders</Link> <br />
+                <Link to="/userhome/useraddress" onClick={hideHome}><FaAddressBook id="address_img" /> Address</Link> <br />
+                <Link to="/userhome/useraccount" onClick={hideHome}><RiAccountPinBoxFill id="account_img" /> Account</Link> <br />
+                <Link to="/" onClick={hideHome}>Logout <TbHandClick id="logout_img" /></Link> <br />
+                <input type="search" placeholder="search product -)" />
+            </div>
             <div className="user-navbar-home">
-               {home ? <ViewProducts /> : null}
+                {home ? <ViewProducts /> : null}
             </div>
         </div>
     );

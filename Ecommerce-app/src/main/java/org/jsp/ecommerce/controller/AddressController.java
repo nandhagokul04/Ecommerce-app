@@ -27,6 +27,7 @@ public class AddressController {
 
 	@PostMapping("/{user_id}")
 	public ResponseEntity<ResponseStructure<Address>> save(@RequestBody Address address,@PathVariable int user_id) {
+		System.err.println("address save called");
 		return service.save(address, user_id);
 	}
 	@PutMapping

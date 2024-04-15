@@ -1,0 +1,16 @@
+package org.jsp.ecommerce.repository;
+
+import java.util.Optional;
+
+import org.jsp.ecommerce.model.Cart;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+
+public interface CartRepository extends JpaRepository<Cart, Integer> {
+	
+	
+	@Query("select m from Cart m where m.cart_user_id=?1")
+	public Optional<Cart> findByUserId(int cart_user_id);
+
+}

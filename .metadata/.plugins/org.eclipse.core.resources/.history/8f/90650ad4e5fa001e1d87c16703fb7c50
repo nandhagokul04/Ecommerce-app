@@ -1,0 +1,9 @@
+package org.jsp.ecommerce.model;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class ProductCartProducts {
+  private int product_cart_id;
+  private int products_id;
+}

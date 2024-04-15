@@ -14,6 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
 
 @Service
 public class AddressService {
@@ -21,7 +22,7 @@ public class AddressService {
 	private AddressDao dao;
 	@Autowired
 	private UserDao udao;
-	public ResponseEntity<ResponseStructure<Address>> save(Address address,int user_id){
+	public ResponseEntity<ResponseStructure<Address>> save(Address address,@PathVariable int  user_id){
 		Optional<User>user=udao.find(user_id);
 		if(user.isPresent()) {
 			User u=user.get();
