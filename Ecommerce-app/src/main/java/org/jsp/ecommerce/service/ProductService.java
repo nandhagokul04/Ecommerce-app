@@ -84,11 +84,11 @@ public class ProductService {
 	}
 	
 	public ResponseEntity<ResponseStructure<List<Product>>> findbymerchantid(int id) {
-		Optional<Product> pro = dao.find(id);
+		Optional<List<Product>> pro = dao.findbymerchantid(id);
 		if (pro.isPresent()) {
 			ResponseStructure<List<Product>> structure = new ResponseStructure<>();
 			structure.setMessage("Product found !");
-			structure.setData(dao.findbymerchantid(id).get());
+			structure.setData(pro.get());
 			structure.setStatuscode(HttpStatus.OK.value());
 			return new ResponseEntity<>(structure, HttpStatus.OK);
 		}

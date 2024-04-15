@@ -35,8 +35,8 @@ function UserAddress() {
     }, []);
 
     function saveaddress() {
-        console.log("use eff address");
-        axios.post(`http://localhost:8080/address/${id}`, address)
+        console.log("use eff address",uid);
+        axios.post(`http://localhost:8080/address/${uid}`, address)
             .then(() => {
                 alert("Address saved")
             })

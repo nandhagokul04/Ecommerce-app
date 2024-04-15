@@ -1,0 +1,50 @@
+.usercart{
+    margin: 130px 0px 30px 0px;
+
+}
+.product_cart{
+    display: flex;
+    margin-left: 70px;
+}
+.product_image img{
+  height: 240px;
+  width: 200px;
+}
+.product_content{
+    margin-top: 40px;
+    margin-left: 50px;
+}
+.place_order_btn button{
+    position: absolute;
+    left: 55%;
+    margin: 100px 0px;
+    padding: 5px 50px;
+    border-radius: 30px;
+    color: white;
+    background-color: #095DA4;
+    border: 1px solid white;
+}
+#cart_cost{
+    color: red;
+}
+.place_order_btn button:hover{
+    background-color: white;
+    color: #095DA4;
+   border:1px solid  #095DA4;
+}
+.delete_cart_btn button{
+    position: absolute;
+    left: 80%;
+    margin: 100px 0px;
+    padding: 5px 50px;
+    border-radius: 30px;
+    color: white;
+    background-color: red;
+    border: 1px solid white;
+}
+.delete_cart_btn button:hover{
+    background-color: white;
+    color: red;
+    border: 1px solid red;
+
+}

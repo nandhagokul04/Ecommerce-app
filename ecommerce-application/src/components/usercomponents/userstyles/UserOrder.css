@@ -1,0 +1,44 @@
+.userorder{
+    margin: 130px 50px;
+}
+.User_order{
+    display: flex;
+}
+.order_image img{
+  height:200px ;
+  width: 150px;
+  margin-right: 100px;
+}
+.order_content{
+    margin: 45px  100px;
+}
+.order_status{
+    margin: 70px 100px;
+}
+.order_status p{
+ font-size: 20px
+}
+#order_cost{
+    font-size: 28px;
+    font-weight: 500;
+    color: red;
+}
+#order_status{
+   color: green;
+   font-size: 28px;
+   font-weight: 500;
+}
+.cancel_order button{
+   margin: 70px  0px 0px 100px;
+   padding: 3px 50px;
+   border: 1px solid red;
+   border-radius: 30px;
+   background-color: red;
+   font-size: large;
+   font:800 ;
+   color: white;
+}
+.cancel_order button:hover{
+  color: red;
+  background-color: white;
+}

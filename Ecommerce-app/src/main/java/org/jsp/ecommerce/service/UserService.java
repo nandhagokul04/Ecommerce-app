@@ -80,27 +80,28 @@ public class UserService {
 	public ResponseEntity<ResponseStructure<User>> verify(String email,String password) {
 		Optional<User> m = dao.verify(email, password);
 		if (m.isPresent()) {
+			User p=m.get();
+			if(p.getStatus().equals(AccountStatus.ACTIVE.toString())) {
 			ResponseStructure<User> structure = new ResponseStructure<>();
 			structure.setMessage("User Found !");
-			structure.setData(m.get());
+			structure.setData(p);
 			structure.setStatuscode(HttpStatus.OK.value());
 			return new ResponseEntity<>(structure, HttpStatus.OK);
+			}
+			throw new IllegalStateException("Account not activated");
 		}
 		throw new ProductNotFoundException("Invalid ID Entered");
 	}
-	public ResponseEntity<ResponseStructure<User>> verify(long email,String password) {
-		Optional<User> m = dao.verify(email, password);
+	public ResponseEntity<ResponseStructure<User>> verify(long phone,String password) {
+		Optional<User> m = dao.verify(phone, password);
 		if (m.isPresent()) {
-			User u=m.get();
-			if(u.getStatus().equals(AccountStatus.IN_ACTIVE.toString())) {
-				throw new IllegalStateException("User Not Verified");
-			}
-			ResponseStructure<User> structure = new ResponseStructure<>();
-			structure.setMessage("User Found !");
-			structure.setData(m.get());
-			structure.setStatuscode(HttpStatus.OK.value());
-			return new ResponseEntity<>(structure, HttpStatus.OK);
+				ResponseStructure<User> structure = new ResponseStructure<>();
+				structure.setMessage("User Found !");
+				structure.setData(m.get());
+				structure.setStatuscode(HttpStatus.OK.value());
+				return new ResponseEntity<>(structure, HttpStatus.OK);
 		}
+	
 		throw new ProductNotFoundException("Invalid ID Entered");
 	}
 	public ResponseEntity<ResponseStructure<String>> activate(String token) {

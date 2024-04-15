@@ -15,7 +15,7 @@ function ProductView() {
     let[refdata,setrefdata]=useState("")
 
     useEffect(() => {
-        console.log("product view");
+        console.log("product view",id);
         axios.get(`http://localhost:8080/products/merchant_id/${id}`)
             .then(response => {
                 setData(response.data.data);

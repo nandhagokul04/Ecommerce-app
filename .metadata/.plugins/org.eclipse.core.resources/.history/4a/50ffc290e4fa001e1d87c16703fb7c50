@@ -1,0 +1,20 @@
+package org.jsp.ecommerce.repository;
+
+import java.util.List;
+import java.util.Optional;
+
+
+import org.jsp.ecommerce.model.ProductCart;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+
+public interface CartRepository extends JpaRepository<ProductCart, Integer> {
+	
+	
+	@Query("select m from ProductCart m where m.cart_user_id=?1")
+	public Optional<List<ProductCart>> findByUserId(int cart_user_id);
+	
+	@Query("delete m from ProductCart m where m.products.id=?1")
+	public void deletebyproductId(int productid);
+
+}

@@ -48,7 +48,7 @@ function UserAccount(){
             <div className="my-account">
                <p>UserName: {data.name}</p>
                <p>Email: {data.email}</p>
-               <p>Password: {data.password}</p>
+               {/* <p>Password: {data.password}</p> */}
                <p>Phone: {data.phone}</p>
                <button onClick={()=>{editacc(data)}}><Edit id="editadd"/></button>
         </div>
@@ -58,10 +58,9 @@ function UserAccount(){
                 {/* <label htmlFor="">Name</label> */}
                 <input value={name} onChange={(e) => { setname(e.target.value) }} type="text" placeholder="Enter Name" required />
                 </div>
-                <div className="email">
-                {/* <label htmlFor="">Email</label> */}
+                {/* <div className="email">
                 <input type="email" value={email} onChange={(e) => { setemail(e.target.value) }} placeholder="Enter email" required />
-                </div>
+                </div> */}
                 <div className="phone">
                 {/* <label htmlFor="">Phone</label> */}
                 <input type="tel" value={phone} onChange={(e) => { setphone(e.target.value) }} pattern="[0-9]{10}" placeholder="Enter phone" required />
