@@ -12,7 +12,7 @@
 }
 .product_content{
     margin-top: 40px;
-    margin-left: 50px;
+    margin-left: 120px;
 }
 .place_order_btn button{
     position: absolute;
@@ -47,4 +47,7 @@
     color: red;
     border: 1px solid red;
 
+}
+#cart_description{
+    width: 80%;
 }

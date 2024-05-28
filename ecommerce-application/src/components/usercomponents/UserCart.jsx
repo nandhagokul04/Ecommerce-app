@@ -26,7 +26,7 @@ function UserCart() {
            placeanddeletecart(id)
        })
        .catch(error => {
-           alert("OOPS! Cannot place order")
+           alert("Existing order  ")
            console.error('Error fetching data:', error);
        });
        
@@ -65,7 +65,7 @@ function UserCart() {
                             <div className="product_content">
                                 <h4>{product.name}</h4>
                                 <p>{product.brand}{product.category}</p>
-                                <p>{product.description}</p>
+                                <p id="cart_description">{product.description}</p>
                                 <p id="cart_cost">₹{product.cost}.000</p>
                             </div>
                             <div className="place_order_btn">
