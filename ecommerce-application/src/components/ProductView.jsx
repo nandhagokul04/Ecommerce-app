@@ -31,7 +31,7 @@ function ProductView() {
     }
     function edit(product) {
         console.log("edit called");
-        nav(`/merchanthome/editproducts`, { state: { product } })
+        nav(`/merchanthome/editproducts`, { state: product  });
     }
     function deleteproduct(id) {
         axios.delete(`http://localhost:8080/products/${id}`)

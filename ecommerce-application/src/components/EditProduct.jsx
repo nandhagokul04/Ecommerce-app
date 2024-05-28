@@ -3,9 +3,10 @@ import axios from "axios"
 import { useLocation } from "react-router"
 
 function EditProduct() {
+    console.log("edit product page");
     const location = useLocation();
-    const product = location.state.product;
-    console.log(product);
+    const product = location.state||{};
+    console.log("product",product);
 
     let [id, setid] = useState(product.id || "");
     let [name, setname] = useState(product.name || "");

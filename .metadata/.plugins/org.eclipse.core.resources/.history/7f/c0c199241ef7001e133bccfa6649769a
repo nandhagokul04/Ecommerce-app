@@ -1,6 +1,0 @@
-package org.jsp.ecommerce.repository;
-
-
-public interface CartRepository {
-
-}
